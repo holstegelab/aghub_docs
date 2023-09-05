@@ -1,5 +1,3 @@
-.. _agh_getting_started:
-
 *******************
 AGH Getting Started
 *******************
@@ -54,24 +52,20 @@ Set-up AGH User Account
 ------------------------
 
 1. Next, go to [portal](https://portal.cua.surf.nl).
-    a. Fill in the login details you received by mail, and change the auto-generated password from the e-mail 
-    b. You need to accept the SURF Usage agreement to obtain access to the AGHub.
-    c. In order to access the AGHub you need to have a file on your local computer (say, your laptop) with a private SSH key, 
-       and you need to upload its matching public SSH key on the SURF CUA portal. 
-
-       Then, when you are going to connect to AGHub from your computer, the SSH private and public keys will be compared and, 
-       if they successfully relate to one-another, your connection will be established. Note that uploading your key to the portal is an one time task.
-
-       
-       1. If you already have an SSH key-pair you can proceed to upload it. 
-          If not, see [this link](https://spiderdocs.readthedocs.io/en/latest/Pages/ssh_keys.html) for the process on Linux and Mac. 
-          By default, the key-pair is stored in the .ssh folder in your home directory. The public key is the file with the extension .pub.
-          Note that Windows SSH agents like [Putty](https://www.putty.org) also have functionality to [generate SSH keys](https://www.ssh.com/academy/ssh/putty/windows/puttygen).
-          Your public key can be stored in a file, or copied from the GUI.
-
-       2. Next, copy the contents of the public key file to the clipboard. Then, go to the portal, and fill in the public key in the text box, and 
-          *the password of your portal account* (thus not a possible password you might have associated with your private key!). 
-          Then, click on the button to upload the key.
+   - Fill in the login details you received by mail, and change the auto-generated password from the e-mail 
+   - You need to accept the SURF Usage agreement to obtain access to the AGHub.
+   - In order to access the AGHub you need to have a file on your local computer (say, your laptop) with a private SSH key, 
+     and you need to upload its matching public SSH key on the SURF CUA portal. 
+     Then, when you are going to connect to AGHub from your computer, the SSH private and public keys will be compared and, 
+     if they successfully relate to one-another, your connection will be established. Note that uploading your key to the portal is an one time task.
+     - If you already have an SSH key-pair you can proceed to upload it. 
+       If not, see [this link](https://spiderdocs.readthedocs.io/en/latest/Pages/ssh_keys.html) for the process on Linux and Mac. 
+       By default, the key-pair is stored in the .ssh folder in your home directory. The public key is the file with the extension .pub.
+       Note that Windows SSH agents like [Putty](https://www.putty.org) also have functionality to [generate SSH keys](https://www.ssh.com/academy/ssh/putty/windows/puttygen).
+       Your public key can be stored in a file, or copied from the GUI.
+     - Next, copy the contents of the public key file to the clipboard. Then, go to the portal, and fill in the public key in the text box, and 
+       *the password of your portal account* (thus not a possible password you might have associated with your private key!). 
+       Then, click on the button to upload the key.
 
 2. Now, set up a [2fa token](https://2fa.surfsara.nl/) for logging into SSH. For this, you need to install an 2FA-app on your phone. A good choice is 'privacyIDEA Authenticator'. 
    After installing the app, you need to scan the QR code on the 2FA website. This will add an entry to the app. 
@@ -100,10 +94,11 @@ Initalize your account
 
 To facilitate setting up your account, we recommend you run the following command:
 
-.. code-block:: bash
+```bash
 
     /project/aghub/Share/init/init.sh
-    
+```
+
 
 This script will do the following:
 
@@ -118,16 +113,16 @@ research drive.
 * It will setup your bashrc, vimrc and screenrc files with useful defaults. 
 
 
-The next step now is to [setup your research drive mount](agh_use_of_research_drive.rst).
+The next step now is to [setup your research drive mount](agh_use_of_research_drive.md).
 
-Afterwards, you can find out how to [install new software](agh_installing_software.rst).
+Afterwards, you can find out how to [install new software](agh_installing_software.md).
 
 ----------------------
 Get started with SLURM
 ----------------------
 
 After getting access to the cluster, please refer to our Spider documentation for submitting your first jobs:
-`Spider Documentation <https://spiderdocs.readthedocs.io/en/latest/Pages/getting_started.html/>`_ 
+[Spider Documentation](https://spiderdocs.readthedocs.io/en/latest/Pages/getting_started.html). 
 
 
 

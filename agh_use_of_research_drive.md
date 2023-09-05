@@ -1,5 +1,3 @@
-.. _agh_research_drive:
-
 *************************
 AGH Use of Research Drive
 *************************
@@ -35,25 +33,25 @@ Accessing the Research Drive from your local machine
 
 The research drive can be accessed in multiple ways:
 
-* The web browser: `Research Drive <https://amsterdamumc.data.surfsara.nl/>`_.
+* The web browser: [Research Drive](https://amsterdamumc.data.surfsara.nl/).
 
 * A sync client on your local machine. This will automatically sync the contents of the
 Research Drive to a folder on your local machine. This way, you can easily transfer data to and from the cluster. 
 This client is available for Windows, Mac and Linux. The following page describes how to set up the client:
-`ownCloud client <https://wiki.surfnet.nl/display/RDRIVE/ownCloud+desktop+client>`_.
+[ownCloud client](https://wiki.surfnet.nl/display/RDRIVE/ownCloud+desktop+client).
 
 * RClone. This is a command line tool that allows you to sync the Research Drive to a folder 
 on your local machine. This is especially useful if you want to automate the syncing process. 
 RClone also allows you to mount the research drive folder on your local machine. 
 Setting up RClone is described on the following page:
-`rClone access <https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone>`_.
+[rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone).
 
 -------------------------------------------------
 Accessing the Research Drive from the AGH cluster
 -------------------------------------------------
 
 The research drive can be accessed from the cluster through the use of RClone. How to set this up is described on the
-following page: `rClone access <https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone>`_.
+following page: [rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone).
 
 After finishing this, there should be a rclone config being available which the name
 that was chosen during configuration (e.g. 'RD').
@@ -70,20 +68,22 @@ This can be done in two ways:
 
 1. A direct copy command: 
 
-.. code-block:: bash
+```bash
     rclone copy /path/to/local/file RD:your_folder_name/file
     rclone ls RD:your_folder_name
+```
 
 (`your_folder_name` is the name of the folder you see when executing `rclone ls RD:`)
 
 
 2. By mounting the research drive to a folder on the cluster. This can be done by the following command:
 
-.. code-block:: bash
+```bash
     rclone mount RD:your_folder_name ~/rd
+```
 
 (This assumes there is already a folder named `rd` in your home directory, note that this
-folder is automatically created by the init script (see :ref:`_agh_getting_started`)).
+folder is automatically created by the init script (see [getting started](agh_getting_started.md)).
 
 You can now move the rclone process to the background by pressing CTRL+Z and then typing 'bg'.
 
@@ -105,8 +105,9 @@ Recommended rclone mount options
 
 For day to day use, we recommend a few options to make the connection more reliable:
 
-.. code-block:: bash
+```bash
     rclone mount --use-cookies --timeout 15m --cache-dir ~/.rd_cache --vfs-cache-mode full --no-modtime RD:your_folder_name  ~/rd
+```
 
 The option '--use-cookies' will make sure that you get connected to the same backend to prevent file locking issues. 
 The option '--timeout 15m' is needed for the transfer of large files (increase if needed). 
@@ -119,14 +120,15 @@ automatically sets up the screen session and executes the rclone mount command.
 
 To use this script, run the following command:
 
-.. code-block:: bash
+```bash
     mount_rd RD:your_folder_name
+```
 
 (This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
 name of your configuration.)
 
 To unmount the research drive, run the following command:
 
-.. code-block:: bash
+```bash
     fusermount -u ~/rd
-
+```

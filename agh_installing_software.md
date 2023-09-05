@@ -1,5 +1,3 @@
-.. _agh_installing_software:
-
 *********************************
 Installation of software packages
 *********************************
@@ -7,7 +5,7 @@ Installation of software packages
 The AGH is a unique environment, as there is no direct internet connection.
 
 To install software, one can upload a package to the AGH through the 
-research drive (see :ref:`_agh_research_drive`), and then install it using standard 
+[research drive](agh_use_of_research_drive.md), and then install it using standard 
 approaches. 
 
 However, some software packages require large number of dependencies, which can be 
@@ -68,9 +66,9 @@ On AGH, we already have pre-built image that contains commonly used software pac
 To use this image, you can load the module and then run the image as a command. For example, 
 to run the image as a bash shell, you can do:
 
-.. code-block:: bash
-
+```bash
     singularity shell /project/aghub/Share/images/conda.sif
+```
 
 This will modify your environment to include the conda environment. You can see this from the
 modified shell prompt ('Apptainer>').  Now e.g. you can start ipython by running the command `ipython`. 
@@ -78,11 +76,11 @@ modified shell prompt ('Apptainer>').  Now e.g. you can start ipython by running
 
 Alternatively, you can also directly  execute a specific command from the image. For example, to run ipython, you can do:
 
-.. code-block:: bash
-
+```bash
     singularity run /project/aghub/Share/images/conda.sif ipython
+```
 
-For more information on how to use Singularity, please refer to the `Singularity documentation <https://sylabs.io/guides/3.5/user-guide/index.html>`_.
+For more information on how to use Singularity, please refer to the [Singularity documentation](https://sylabs.io/guides/3.5/user-guide/index.html).
 
 Note that the use of singularity has one drawback: it does not allow you to run slurm commands from *within* the container.
 You can of course execute software from a singularity image in your batch jobs,  however, you cannot execute commands like
