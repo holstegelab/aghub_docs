@@ -15,17 +15,38 @@ The Alzheimer Genetics Hub (AGH) is a secure compute environment based largely f
 Join the Collaborative Organization
 -----------------------------------
 
-Accept invitation e-mail from SRAM
+Accept invitation e-mail from SRAM. By clicking the button, you get a welcome message. Next, click login.
 
-`afterwards it can take 15 minutes for the system to sync`
+You have then two options:
 
+1. [PREFERRED] Login through your instutional account on which you received your invitation. To search the correct link,
+enter the name of your institute in the text box. Many institutes have already been linked. If yours is not among them, 
+let us know!
+
+
+After logging in, it is possible that you receive a message that your institute has not activated access to 
+SURF Research Access Management (SRAM). In that case, you need to contact your ICT helpdesk. Store the information in the 
+error message in a screen shot, and mention that you want to request that the IdP service of your institute is 
+activated/linked to SRAM.
+
+
+2. As a fallback option, there is the option to use the EduID service. This can be used also with a non-institutional mail account.
+To find the EduID service, enter 'EduID' in the text box. You will then see a list of EduID services. Select the one that
+is appropriate for you. If you do not have an EduID account yet, you can now create one. This is a one-time process. 
+You also will have to download an EduID app (offered by Surf) to enable 2-factor authentication. Next, you can use your EduID account
+to login. 
+
+
+
+After logging it, it `can take 15 minutes for the system to sync`. 
+If you still cannot login after 15 minutes, please contact us.
 
 ------------------------
 Set-up AGH User Account
 ------------------------
 
-1. Go to [portal](https://portal.surfsara.nl/home/) and change password from e-mail / accept SURF Usage agreement
-2. Set up [2fa token](https://2fa.surfsara.nl/)
+1. Next, go to [portal](https://portal.cua.surf.nl) and change the auto-generated password from the e-mail and accept the SURF Usage agreement
+2. Now, set up a [2fa token](https://2fa.surfsara.nl/) for logging into SSH. 
 
 
 ---------------------------------
