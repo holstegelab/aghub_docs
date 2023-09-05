@@ -72,7 +72,7 @@ This can be done in two ways:
    >[!NOTE]
    > This assumes there is already a folder named `rd` in your home directory, note that this
    > folder is automatically created by the init script (see [getting started](agh_getting_started.md).
-   - You can now move the rclone process to the background by pressing CTRL+Z and then typing 'bg'.
+   - You can now move the rclone process to the background by pressing CTRL+Z and then typing 'bg'. But see below ('Recommended rclone mount options') for an easier method.
    - Now, files in the folder 'rd' will mirror the files in the research drive. 
      Also, if you have set up a sync client or a similar rclone configuration on your local machine,
      **any files copied to the rd folder will immediately appear in the mounted folder on your local machine**. 
@@ -106,7 +106,7 @@ To use this script, run the following command:
 ```bash
     mount_rd RD:your_folder_name
 ```
-[!NOTE]
+>[!NOTE]
 > This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
 > name of your configuration.
 
