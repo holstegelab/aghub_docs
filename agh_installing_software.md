@@ -1,6 +1,4 @@
-*********************************
-Installation of software packages
-*********************************
+#Installation of software packages
 
 The AGH is a unique environment, as there is no direct internet connection.
 
@@ -12,11 +10,13 @@ However, some software packages require large number of dependencies, which can 
 a hassle to install. Conda is a recommended method for installing such software
 and its dependencies. However, this normally requires an active internet connection.
 
------------------------------------------------
-Install custom conda environments on the AGH
------------------------------------------------
+>[!IMPORTANT]
+> Note that many software packages are already available through the default Conda environment.
 
-In :ref:`_agh_getting_started`, we describe how you can install a default conda environment
+-----------------------------------------------
+##Install custom conda environments on the AGH
+
+In the [getting-started guide](agh_getting_started.md), we describe how you can install a default conda environment
 within your home directory by running the script `/project/aghub/Share/init/init.sh`.
 
 
@@ -53,38 +53,33 @@ Steps:
 
 
 -----------------------------------------------
-Using Singularity to run software in containers
------------------------------------------------
+##Using Singularity to run software in containers
 
 Singularity is a containerization software that allows users to run software packages
 from an image file. It is similar to Docker, but is more suitable for HPC.
 It is an alternative method for installing software packages on the AGH.
 
-
-On AGH, we already have pre-built image that contains commonly used software packages.
-
-To use this image, you can load the module and then run the image as a command. For example, 
-to run the image as a bash shell, you can do:
-
-```bash
-    singularity shell /project/aghub/Share/images/conda.sif
-```
-
-This will modify your environment to include the conda environment. You can see this from the
-modified shell prompt ('Apptainer>').  Now e.g. you can start ipython by running the command `ipython`. 
+- On AGH, we already have pre-built image that contains commonly used software packages.
+  To use this image, you can load the module and then run the image as a command. For example, 
+  to run the image as a bash shell, you can do:
+  ```bash
+      singularity shell /project/aghub/Share/images/conda.sif
+  ```
+  This will modify your environment to include the conda environment. You can see this from the
+  modified shell prompt ('Apptainer>').  Now e.g. you can start ipython by running the command `ipython`. 
 
 
-Alternatively, you can also directly  execute a specific command from the image. For example, to run ipython, you can do:
-
-```bash
-    singularity run /project/aghub/Share/images/conda.sif ipython
-```
+- Alternatively, you can also directly  execute a specific command from the image. For example, to run ipython, you can do:
+  ```bash
+      singularity run /project/aghub/Share/images/conda.sif ipython
+  ```
 
 For more information on how to use Singularity, please refer to the [Singularity documentation](https://sylabs.io/guides/3.5/user-guide/index.html).
 
-Note that the use of singularity has one drawback: it does not allow you to run slurm commands from *within* the container.
-You can of course execute software from a singularity image in your batch jobs,  however, you cannot execute commands like
-sbatch from within the container. This is because the software in the singularity image is not aware of the Slurm environment.
+>[!IMPORTANT]
+> Note that the use of singularity has one drawback: it does not allow you to run slurm commands from *within* the container.
+> You can of course execute software from a singularity image in your batch jobs, however, you cannot execute commands like
+> sbatch from within the container. This is because the software in the singularity image is not aware of the Slurm environment.
 
 
 
