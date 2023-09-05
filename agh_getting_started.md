@@ -1,13 +1,13 @@
-#AGH Getting Started
+# AGH Getting Started
 
 
 ------------------------
-##Quick Overview
+## Quick Overview
 
 The Alzheimer Genetics Hub (AGH) is a secure compute environment based largely from a clone of the Spider cluster at SURF.
 
 ------------------------
-##Step 1. Join the Collaborative Organization
+## Step 1. Join the Collaborative Organization
 
 The collaborative organization manages your access to the AGH. T
 - To join, accept the invitation e-mail you received. By clicking the button, you get a welcome message. 
@@ -34,7 +34,7 @@ The collaborative organization manages your access to the AGH. T
 
 
 ------------------------
-##Step 2. Set-up AGH User Account
+## Step 2. Set-up AGH User Account
 
 1. Next, go to [SURF CUA portal](https://portal.cua.surf.nl).
    - Fill in the login details you received by mail, and change the auto-generated password from the e-mail.
@@ -62,7 +62,7 @@ The collaborative organization manages your access to the AGH. T
    - After installing the app, you need to scan the QR code on the 2FA website. This will add an entry to the app. The app will generate a 6-digit code every 30 seconds. This code is needed to login to the AGHub. Note that you can also use the app to generate codes for other services that use 2FA, such as Google, Facebook, etc. 
    
 ---------------------------------
-##Step 3. Logging into AGHub
+## Step 3. Logging into AGHub
 
 1. Log into the doornode with password set in the SURF portal:
    ```bash
@@ -76,7 +76,7 @@ The collaborative organization manages your access to the AGH. T
 If logging in succeeded you should see now the AGHub banner.
 
 ----------------------
-##Step 4. Initalize your account
+## Step 4. Initalize your account
 
 To facilitate setting up your account, we recommend you run the following command:
 
@@ -104,7 +104,7 @@ The next step now is to [setup your research drive mount](agh_use_of_research_dr
 Afterwards, you can find out how to [install new software](agh_installing_software.md).
 
 ----------------------
-##Get started with SLURM
+## Get started with SLURM
 
 After getting access to the cluster, please refer to our Spider documentation for submitting your first jobs:
 [Spider Documentation](https://spiderdocs.readthedocs.io/en/latest/Pages/getting_started.html). 

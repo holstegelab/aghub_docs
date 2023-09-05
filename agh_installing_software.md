@@ -1,4 +1,4 @@
-#Installation of software packages
+# Installation of software packages
 
 The AGH is a unique environment, as there is no direct internet connection.
 
@@ -14,7 +14,7 @@ and its dependencies. However, this normally requires an active internet connect
 > Note that many software packages are already available through the default Conda environment.
 
 -----------------------------------------------
-##Install custom conda environments on the AGH
+## Install custom conda environments on the AGH
 
 In the [getting-started guide](agh_getting_started.md), we describe how you can install a default conda environment
 within your home directory by running the script `/project/aghub/Share/init/init.sh`.
@@ -53,7 +53,7 @@ Steps:
 
 
 -----------------------------------------------
-##Using Singularity to run software in containers
+## Using Singularity to run software in containers
 
 Singularity is a containerization software that allows users to run software packages
 from an image file. It is similar to Docker, but is more suitable for HPC.

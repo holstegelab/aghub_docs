@@ -1,12 +1,12 @@
 ---------------------
-#Use of research drive
+# Use of research drive
 
 Due to AGH being a secure compute environment, it is not possible to directly download or upload data from/to the internet.
 Instead, we use the SURF Research Drive to transfer data to and from the cluster. 
 
 
 ---------------------
-##Step 1. Setting up an account
+## Step 1. Setting up an account
 
 1. You should have received an invitation mail for the Research Drive (if not, let us know!). Within this mail there is a link to
    create an account. After following this link, there are two options: 
@@ -21,7 +21,7 @@ Instead, we use the SURF Research Drive to transfer data to and from the cluster
 3. After you have received permissions, you can access your AGH research drive folder through the [Research Drive website](https://amsterdamumc.data.surfsara.nl/index.php/login).
 
 ----------------------------------------------------
-##Step 2. Accessing the Research Drive from your local machine
+## Step 2. Accessing the Research Drive from your local machine
 
 The research drive can be accessed in multiple ways:
 
@@ -38,7 +38,7 @@ RClone also allows you to mount the research drive folder on your local machine.
 [rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone).
 
 -------------------------------------------------
-Step 3. Accessing the Research Drive from the AGH cluster
+## Step 3. Accessing the Research Drive from the AGH cluster
 
 1. The research drive can be accessed from the cluster through the use of RClone. How to set this up is described on the
    following page: [rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone).
@@ -49,7 +49,7 @@ Step 3. Accessing the Research Drive from the AGH cluster
 
 
 ----------------------------------------------
-##Use of rclone to transfer data to and from AGH
+## Use of rclone to transfer data to and from AGH
 
 In the previous section, you have set up a configuration with a specific name (e.g. 'RD'). 
 Now, `rClone` can be used to transfer data to and from the AGH cluster to the research drive. 
@@ -85,7 +85,7 @@ This can be done in two ways:
 
 
 --------------------------------
-##Recommended rclone mount options
+## Recommended rclone mount options
 
 For day to day use, we recommend a few options to make the connection more reliable:
 
