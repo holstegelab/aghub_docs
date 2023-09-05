@@ -26,6 +26,8 @@ You have then two options:
 enter the name of your institute in the text box. Many institutes have already been linked. If yours is not among them, 
 let us know!
 
+![Screen showing the institute seach box](images/broad_select.png)
+
 
 After logging in, it is possible that you receive a message that your institute has not activated access to 
 SURF Research Access Management (SRAM). In that case, you need to contact your ICT helpdesk. Store the information in the 
