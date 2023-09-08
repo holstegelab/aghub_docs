@@ -28,7 +28,7 @@ The collaborative organization manages your access to the AGH.
        appropriate for you, or otherwise 'EduID (NL)'. 
      - If you do not have an EduID account yet, you can now create one. This is a one-time process. During the process, you wil have to download an EduID app (offered by Surf) to enable 2-factor authentication. 
        Next, you can use your EduID account to login and join the AGHub collaboration.
-- After joining the collaboration, you will get an email with your temporary login information. 
+- After joining the collaboration, you will get two emails with your temporary login information. 
   >[!IMPORTANT]
   > The system can take 20 minutes to sync. If you stil cannot login after 1 hour, please contact us.
 
@@ -36,18 +36,18 @@ The collaborative organization manages your access to the AGH.
 ------------------------
 ## Step 2. Set-up AGH User Account
 
-1. Next, you need to setup the AGHub user account. 
-   - About 20 minutes after Step 1 you will receive a mail with your username, and a separate mail with a link to set your password. 
+1. Once you have received the emails, you need to setup the AGHub user account. 
+   - You will receive a mail with your username, and a separate mail with a link to set your password. 
      Use this link to set your account password. 
      >[!WARNING]
-     > The link in the mail is only valid for 12 hours, and is a one-time link. Do not close your browser window before you have set a new password!
+     > The link in the mail is **only valid for 12 hours**, and is a one-time link. Do not close your browser window before you have set a new password!
    - After you have set a password, you need to accept the SURF Usage agreement, this can be done in the [SURF CUA portal](https://portal.cua.surf.nl).
    - In order to access the AGHub you need to have a file on your local computer (say, your laptop) with a private SSH key, 
      and you need to upload its matching public SSH key on the SURF CUA portal. When you are going to connect to AGHub from your computer, 
      the SSH private and public keys will be compared and, if they successfully relate to one-another, your connection will be established. Note that uploading your key to the portal is an one time task.
  
      **Instructions on how to generate an SSH key-pair (only if you do not yet have one)**
-       - [Linux,Mac] Follow the process detailed in [this link](https://spiderdocs.readthedocs.io/en/latest/Pages/ssh_keys.html). 
+       - [Linux,Mac] Follow the process detailed in [this link](https://spiderdocs.readthedocs.io/en/latest/Pages/ssh_keys.html). The 'SSH Agent' step is optional. 
          By default, the key-pair is stored in the .ssh folder in your home directory. The public key is the file with the extension .pub.
        - [Windows] Windows SSH agents like [Putty](https://www.putty.org) also have functionality to [generate SSH keys](https://www.ssh.com/academy/ssh/putty/windows/puttygen).
          Your public key can be stored in a file, or copied from the GUI.
