@@ -26,22 +26,25 @@ The collaborative organization manages your access to the AGH.
      for people who do not have an institutional account or when it is difficult to get institutional access activated. 
      - To find the EduID service,  enter 'EduID' in the text box that is also used to search for institutes. You will then see a list of EduID services. Select the one that is 
        appropriate for you, or otherwise 'EduID (NL)'. 
-     - If you do not have an EduID account yet, you can now create one. This is a one-time process. Durint the process, you wil have to download an EduID app (offered by Surf) to enable 2-factor authentication. 
+     - If you do not have an EduID account yet, you can now create one. This is a one-time process. During the process, you wil have to download an EduID app (offered by Surf) to enable 2-factor authentication. 
        Next, you can use your EduID account to login and join the AGHub collaboration.
 - After joining the collaboration, you will get an email with your temporary login information. 
   >[!IMPORTANT]
-  > The system can take 15 minutes to sync. If you stil cannot login after 1 hour, please contact us.
+  > The system can take 20 minutes to sync. If you stil cannot login after 1 hour, please contact us.
 
 
 ------------------------
 ## Step 2. Set-up AGH User Account
 
-1. Next, go to [SURF CUA portal](https://portal.cua.surf.nl).
-   - Fill in the login details you received by mail, and change the auto-generated password from the e-mail.
-   - You need to accept the SURF Usage agreement to obtain access to the AGHub.
+1. Next, you need to setup the AGHub user account. 
+   - About 20 minutes after Step 1 you will receive a mail with your username, and a separate mail with a link to set your password. 
+     Use this link to set your account password. 
+     >[!WARNING]
+     > The link in the mail is only valid for 12 hours, and is a one-time link. Do not close your browser window before you have set a new password!
+   - After you have set a password, you need to accept the SURF Usage agreement, this can be done in the [SURF CUA portal](https://portal.cua.surf.nl).
    - In order to access the AGHub you need to have a file on your local computer (say, your laptop) with a private SSH key, 
      and you need to upload its matching public SSH key on the SURF CUA portal. When you are going to connect to AGHub from your computer, 
-     the SSH private and public keys will be compared and,   if they successfully relate to one-another, your connection will be established. Note that uploading your key to the portal is an one time task.
+     the SSH private and public keys will be compared and, if they successfully relate to one-another, your connection will be established. Note that uploading your key to the portal is an one time task.
      <details>
        <summary>**Instructions on how to generate an SSH key-pair**</summary>
        ### Generating an SSH key-pair
