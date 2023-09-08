@@ -46,7 +46,7 @@ The collaborative organization manages your access to the AGH.
      and you need to upload its matching public SSH key on the SURF CUA portal. When you are going to connect to AGHub from your computer, 
      the SSH private and public keys will be compared and, if they successfully relate to one-another, your connection will be established. Note that uploading your key to the portal is an one time task.
  
-     **Instructions on how to generate an SSH key-pair**
+     **Instructions on how to generate an SSH key-pair (only if you do not yet have one)**
        - [Linux,Mac] Follow the process detailed in [this link](https://spiderdocs.readthedocs.io/en/latest/Pages/ssh_keys.html). 
          By default, the key-pair is stored in the .ssh folder in your home directory. The public key is the file with the extension .pub.
        - [Windows] Windows SSH agents like [Putty](https://www.putty.org) also have functionality to [generate SSH keys](https://www.ssh.com/academy/ssh/putty/windows/puttygen).
