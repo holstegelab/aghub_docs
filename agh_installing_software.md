@@ -31,6 +31,7 @@ Steps:
    with the name 'myenv' by running the command `conda create -n myenv` 
    >[!NOTE]
    > This assumes you have installed conda already, if not, we recommend the [Miniforge](https://github.com/conda-forge/miniforge#mambaforge) installer.
+   > If you are using 'Mamba' (faster alternative for Conda), you should replace the `conda` with the `mamba` command.
 
 2. Install the software packages that you need in this environment. For example, you can install
    the package 'numpy' by running the command `conda install numpy`.
@@ -61,7 +62,7 @@ Singularity is a containerization software that allows users to run software pac
 from an image file. It is similar to Docker, but is more suitable for HPC.
 It is an alternative method for installing software packages on the AGH.
 
-- On AGH, we already have pre-built image that contains commonly used software packages.
+- On AGH, we already have a pre-built image that contains commonly used software packages.
   To use this image, you can load the module and then run the image as a command. For example, 
   to run the image as a bash shell, you can do:
   ```bash

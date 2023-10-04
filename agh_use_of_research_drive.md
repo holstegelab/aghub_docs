@@ -4,7 +4,7 @@
 Due to AGH being a secure compute environment, it is not possible to directly download or upload data from/to the internet.
 
 Instead, we use the SURF Research Drive to transfer data to and from the cluster. Once this has been setup, it is a seamless
-experience (copy data into a folder on AGH, and receive it in a folder on your laptop).  Here, we describe how to set this up. 
+experience (copy data into a folder on AGH, and receive it in a folder on your laptop, and vice versa).  Here, we describe how to set this up. 
 
 
 ---------------------
@@ -72,18 +72,20 @@ This can be done in two ways:
    ```bash
        rclone mount RD:your_folder_name ~/rd
    ```
+   Now, files in the folder 'rd' will mirror the files in the research drive. 
+   Also, if you have set up a sync client or a similar rclone configuration on your local machine,
+   **any files copied to the rd folder will immediately appear in the mounted folder on your local machine**. 
+   Vice versa, any files copied in the mounted folder on your local machine will immediately appear in the 
+   `rd` folder on the cluster.
+
    >[!NOTE]
    > This assumes there is already a folder named `rd` in your home directory, note that this
-   > folder is automatically created by the init script (see [getting started](agh_getting_started.md).
-   - You can now move the rclone process to the background by pressing CTRL+Z and then typing 'bg'. But see below ('Recommended rclone mount options') for an easier method.
-   - Now, files in the folder 'rd' will mirror the files in the research drive. 
-     Also, if you have set up a sync client or a similar rclone configuration on your local machine,
-     **any files copied to the rd folder will immediately appear in the mounted folder on your local machine**. 
-     Vice versa, any files copied in the mounted folder on your local machine will immediately appear in the 
-     `rd` folder on the cluster.
+   > folder is automatically created by the init script (see [getting started](agh_getting_started.md)).
 
    >[!NOTE]
    > The mounted folder will be empty if you have not copied any files to the research drive yet.
+   
+   - You can now move the rclone process to the background by pressing CTRL+Z and then typing 'bg'. But see below ('Recommended rclone mount options') for an easier method.
    - To unmount the folder, you can move the rclone process to the foreground by typing 'fg' and then pressing CTRL+C.
    - Alternatively, you can use the command 'fusermount -u rd' to unmount the folder.
 
