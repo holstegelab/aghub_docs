@@ -22,6 +22,10 @@ The collaborative organization manages your access to the AGH.
      > SURF Research Access Management (SRAM). In that case, you need to contact your ICT helpdesk. Store the information in the 
      > error message in a screen shot, and mention that you want to request that the IdP service of your institute is 
      > activated/linked to SRAM. You can also refer the helpdesk to this [link](https://dashboard.surfconext.nl/apps/8164/saml20_sp/about) for more information.
+     >[!NOTE]
+     > The SRAM account requires 2-factor authentication. If your institute has not activated this, it will use the SRAM fallback method. This method uses TOTP (time-based one-time password).
+     > For smartphones, some links to authenticator apps are provided (privacyIDEA works well in our experience, but there are many others). If you are not able to use a smartphone, 
+     > note that it is also possible to install a TOTP authenticator application on your laptop (e.g. KeePassXC). 
   2. [FALLBACK] If institutional access is not an option, there is the option to use the [EduID service](https://eduid.nl/en/). This provides an identity service
      for people who do not have an institutional account or when it is difficult to get institutional access activated. 
      - To find the EduID service,  enter 'EduID' in the text box that is also used to search for institutes. You will then see a list of EduID services. Select the one that is 
@@ -29,6 +33,8 @@ The collaborative organization manages your access to the AGH.
      - If you do not have an EduID account yet, you can now create one. This is a one-time process. During the process, you wil have to download an EduID app (offered by Surf) to enable 2-factor authentication. 
        Next, you can use your EduID account to login and join the AGHub collaboration.
 - After joining the collaboration, you will get two emails with your temporary login information. 
+  >[!WARNING]
+  > The link in the mail is **only valid for 12 hours**.
   >[!IMPORTANT]
   > The system can take 20 minutes to sync. If you stil cannot login after 1 hour, please contact us.
 
@@ -59,7 +65,7 @@ The collaborative organization manages your access to the AGH.
      > This is not the password which you might have associated with your private key, but the **portal password**. 
    - Then, click on the button to upload the key.
 2. Now, go to the [2FA website](https://2fa.surfsara.nl/) to generate a 2-factor-authentication token for logging into SSH. 
-   - For this, you need to install an 2FA-app on your phone. A good choice is 'privacyIDEA Authenticator'. 
+   - For this, you need to install an TOTP 2FA-app on your phone. A good choice is 'privacyIDEA Authenticator'. Alternatively, you can also install a TOTP application on your laptop, e.g. KeePassXC.
    - After installing the app, you need to scan the QR code on the 2FA website. This will add an entry to the app. The app will generate a 6-digit code every 30 seconds. This code is needed to login to the AGHub. Note that you can also use the app to generate codes for other services that use 2FA, such as Google, Facebook, etc. 
    
 ---------------------------------
@@ -72,7 +78,7 @@ The collaborative organization manages your access to the AGH.
 
 2. After logging into the doornode, select aghub which should appear in a single select list.
 3. Re-enter the password from the portal
-4. Enter the OTP (2 factor authentication key shown in the 2FA-app) you registered earlier
+4. Enter the one-time password shown in the 2FA-app (activated in step 2.2).
 
 If logging in succeeded you should see now the AGHub banner.
 

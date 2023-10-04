@@ -2,7 +2,9 @@
 # Use of research drive
 
 Due to AGH being a secure compute environment, it is not possible to directly download or upload data from/to the internet.
-Instead, we use the SURF Research Drive to transfer data to and from the cluster. 
+
+Instead, we use the SURF Research Drive to transfer data to and from the cluster. Once this has been setup, it is a seamless
+experience (copy data into a folder on AGH, and receive it in a folder on your laptop).  Here, we describe how to set this up. 
 
 
 ---------------------
@@ -13,9 +15,9 @@ Instead, we use the SURF Research Drive to transfer data to and from the cluster
    * If your organization allows logging in through your institutional account, you are advised to use that option. You can then login with  your institutional account credentials.
    * Alternatively, you can select the option to set up a password directly. 
      >[!IMPORTANT]
-     > Note that you will **not** be guided to a new page (the button appears not to work). However, instead you will directly receive a (temporary) password in the mail. 
+     > Note that you will **not** be guided to a new page (**the button *appears* not to work**). However, instead you will directly receive a (temporary) password in the mail. 
 
-2. After you have created an account, an AGHub Admin has to create and give you access to your own AGHub folder. This can take up to a day during working days. If you have not received permissions after a day, please contact an AGH Admin.
+2. After you have created an account, an AGHub Admin has to create and give you access to your own AGHub folder. This can take up to a day during working days. If you have not received permissions after a day (you will receive an email), please contact an AGH Admin.
    Up till then, you will have an empty home folder.
 
 3. After you have received permissions, you can access your AGH research drive folder through the [Research Drive website](https://amsterdamumc.data.surfsara.nl/index.php/login).
@@ -23,7 +25,7 @@ Instead, we use the SURF Research Drive to transfer data to and from the cluster
 ----------------------------------------------------
 ## Step 2. Accessing the Research Drive from your local machine
 
-The research drive can be accessed in multiple ways:
+The research drive can be accessed in multiple ways from your local machine:
 
 * The web browser: [Research Drive](https://amsterdamumc.data.surfsara.nl/).
 
@@ -32,10 +34,11 @@ Research Drive to a folder on your local machine. This way, you can easily trans
 This client is available for Windows, Mac and Linux. The following page describes how to set up the client:
 [ownCloud client](https://wiki.surfnet.nl/display/RDRIVE/ownCloud+desktop+client).
 
-* [PREFERRED] RClone. This is a command line tool that allows you to sync the Research Drive to a folder 
-on your local machine. This is especially useful if you want to automate the syncing process. 
-RClone also allows you to mount the research drive folder on your local machine. Setting up RClone is described on the following page:
-[rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone).
+* [PREFERRED] RClone. This is a command line tool that allows you to mount the Research Drive to a folder 
+on your local machine. When 'mounted', the research folder appears just like a normal folder on your machine. 
+This can be accomplished with the tool 'RClone'. Setting up RClone is described on the following page:
+[rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone). Note that the same
+rclone config process also has to be performed on the AGH cluster (Step 3). 
 
 -------------------------------------------------
 ## Step 3. Accessing the Research Drive from the AGH cluster
@@ -78,11 +81,14 @@ This can be done in two ways:
      **any files copied to the rd folder will immediately appear in the mounted folder on your local machine**. 
      Vice versa, any files copied in the mounted folder on your local machine will immediately appear in the 
      `rd` folder on the cluster.
+
    >[!NOTE]
    > The mounted folder will be empty if you have not copied any files to the research drive yet.
    - To unmount the folder, you can move the rclone process to the foreground by typing 'fg' and then pressing CTRL+C.
    - Alternatively, you can use the command 'fusermount -u rd' to unmount the folder.
 
+   >[!WARNING]
+   > The mounted folder will only be visible on the user interface machine, and not on the cluster worker nodes. If research drive access is necessary for a cluster job, use the direct `rclone copy` command. 
 
 --------------------------------
 ## Recommended rclone mount options
@@ -106,6 +112,8 @@ To use this script, run the following command:
 ```bash
     mount_rd RD:your_folder_name
 ```
+Here, your_folder_name is the folder name you see by executing `rclone ls RD:`.
+
 >[!NOTE]
 > This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
 > name of your configuration.

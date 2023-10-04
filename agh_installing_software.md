@@ -11,7 +11,7 @@ a hassle to install. Conda is a recommended method for installing such software
 and its dependencies. However, this normally requires an active internet connection.
 
 >[!IMPORTANT]
-> Note that many software packages are already available through the default Conda environment.
+> Note that many (bioinformatics) software packages are already available through the default Conda environment.
 
 -----------------------------------------------
 ## Install custom conda environments on the AGH
@@ -28,7 +28,9 @@ your local machine to the AGH. This is a convenient way to install software.
 Steps:
 
 1. Create a conda environment on your local machine. For example, you can create a conda environment
-   with the name 'myenv' by running the command `conda create -n myenv`. 
+   with the name 'myenv' by running the command `conda create -n myenv` 
+   >[!NOTE]
+   > This assumes you have installed conda already, if not, we recommend the [Miniforge](https://github.com/conda-forge/miniforge#mambaforge) installer.
 
 2. Install the software packages that you need in this environment. For example, you can install
    the package 'numpy' by running the command `conda install numpy`.
