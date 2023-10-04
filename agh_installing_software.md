@@ -31,14 +31,14 @@ Steps:
    with the name 'myenv' by running the command `conda create -n myenv` 
    >[!NOTE]
    > This assumes you have installed conda already, if not, we recommend the [Miniforge](https://github.com/conda-forge/miniforge#mambaforge) installer.
-   > If you are using 'Mamba' (faster alternative for Conda), you should replace `conda` with the `mamba` command in the following steps.
+   > If you are using 'Mamba' (faster alternative for Conda), you should replace `conda` with the `mamba` command in the following steps (except for `conda-pack`).
 
 2. Install the software packages that you need in this environment. For example, you can install
    the package 'numpy' by running the command `conda install numpy`.
 
 3. Install conda-pack by running the command `conda install conda-pack`.
 
-4. Pack the conda environment by running the command `conda pack -n myenv -o myenv.txz`. This will
+4. Pack the conda environment by running the command `conda-pack -n myenv -o myenv.txz`. This will
    create a tarball file 'myenv.txz' that contains the conda environment.
 
 5. Upload the tarball file to the AGH. You can do this by uploading the file to the research drive
