@@ -31,7 +31,7 @@ Steps:
    with the name 'myenv' by running the command `conda create -n myenv` 
    >[!NOTE]
    > This assumes you have installed conda already, if not, we recommend the [Miniforge](https://github.com/conda-forge/miniforge#mambaforge) installer.
-   > If you are using 'Mamba' (faster alternative for Conda), you should replace the `conda` with the `mamba` command.
+   > If you are using 'Mamba' (faster alternative for Conda), you should replace `conda` with the `mamba` command in the following steps.
 
 2. Install the software packages that you need in this environment. For example, you can install
    the package 'numpy' by running the command `conda install numpy`.
