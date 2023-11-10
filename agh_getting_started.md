@@ -33,7 +33,9 @@ The collaborative organization manages your access to the AGH.
        appropriate for you, or otherwise 'EduID (NL)'. 
      - If you do not have an EduID account yet, you can now create one. This is a one-time process. During the process, you wil have to download an EduID app (offered by Surf) to enable 2-factor authentication. 
        Next, you can use your EduID account to login and join the AGHub collaboration.
-- After joining the collaboration, you will get two emails with your temporary login information. 
+- After joining the collaboration, you will get two emails with your temporary login information.
+  ![Screen after one joins the SRAM collaboration successfully](images/sram_joind.png)
+
   >[!WARNING]
   > The link in the mail is **only valid for 12 hours**.
 
@@ -48,9 +50,13 @@ The collaborative organization manages your access to the AGH.
    - You will receive a mail with your username, and a separate mail with a link to set your password. 
      Use this link to set your account password. 
      >[!WARNING]
-     > The link in the mail is **only valid for 12 hours**, and is a one-time link. Do not close your browser window before you have set a new password!
-   - After you have set a password, you need to accept the SURF Usage agreement, this can be done in the [SURF CUA portal](https://portal.cua.surf.nl).
-   - In order to access the AGHub you need to have a file on your local computer (say, your laptop) with a private SSH key, 
+     > The link is a one-time link. Do not close your browser window before you have set a new password! Note that the password
+     needs to be at least 12 characters, with at least one lowercase, uppercase, digit and special character.
+   - After you have set a password, you need to login. During login, you will have to setup the 2FA for the AGHub. To do this, 
+     you will need to  scan a QR code with an app like privacyIDEA authenticator.  
+   - The app will now generate a 6-digit code every 30 seconds. Next, you have to enter this 6-digit code to continue.
+   - In the next step you will have to accept the SURF Usage agreement. 
+   - Now, you are logged into the [SURF CUA portal](https://portal.cua.surf.nl). In order to access the AGHub you need to have a file on your local computer (say, your laptop) with a private SSH key, 
      and you need to upload its matching public SSH key on the SURF CUA portal. When you are going to connect to AGHub from your computer, 
      the SSH private and public keys will be compared and, if they successfully relate to one-another, your connection will be established. Note that uploading your key to the portal is an one time task.
  
@@ -66,9 +72,9 @@ The collaborative organization manages your access to the AGH.
      >[!IMPORTANT]
      > This is not the password which you might have associated with your private key, but the **portal password**. 
    - Then, click on the button to upload the key.
-2. Now, go to the [2FA website](https://2fa.surfsara.nl/) to generate a 2-factor-authentication token for logging into SSH. 
-   - For this, you need to install an TOTP 2FA-app on your phone. A good choice is 'privacyIDEA Authenticator'. Alternatively, you can also install a TOTP application on your laptop, e.g. KeePassXC.
-   - After installing the app, you need to scan the QR code on the 2FA website. This will add an entry to the app. The app will generate a 6-digit code every 30 seconds. This code is needed to login to the AGHub. Note that you can also use the app to generate codes for other services that use 2FA, such as Google, Facebook, etc. 
+
+
+Now you are set to login to the AGHub system. Note that it might take a bit of time for the system to sync.  
    
 ---------------------------------
 ## Step 3. Logging into AGHub
