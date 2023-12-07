@@ -36,7 +36,7 @@ The collaborative organization manages your access to the AGH.
      - If you do not have an EduID account yet, you can now create one. This is a one-time process. During the process, you wil have to download an EduID app (offered by Surf) to enable 2-factor authentication. 
        Next, you can use your EduID account to login and join the AGHub collaboration.
 - After joining the collaboration, you will get two emails with your temporary login information.
-  ![Screen after one joins the SRAM collaboration successfully](images/sram_joind.png)
+  ![Screen after one joins the SRAM collaboration successfully](images/sram_joined.png)
 
 >[!WARNING]
 > The link in the mail is **only valid for 12 hours**.
