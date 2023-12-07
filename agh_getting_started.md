@@ -17,13 +17,13 @@ The collaborative organization manages your access to the AGH.
      enter the name of your institute in the text box. Many institutes have already been linked. If yours is not among them, 
      let us know!
      ![Screen showing the institute seach box](images/broad_select.png)
-     >[!NOTE]
+     > [!NOTE]
      > After logging in, it is possible that you receive a message that your institute has not activated access to 
      > SURF Research Access Management (SRAM). In that case, you need to contact your ICT helpdesk. Store the information in the 
      > error message in a screen shot, and mention that you want to request that the IdP service of your institute is 
      > activated/linked to SRAM. You can also refer the helpdesk to this [link](https://dashboard.surfconext.nl/apps/8164/saml20_sp/about) for more information.
 
-     >[!NOTE]
+     > [!NOTE]
      > The SRAM account requires 2-factor authentication. If your institute has not activated this, it will use the SRAM fallback method. This method uses TOTP (time-based one-time password).
      > For smartphones, some links to authenticator apps are provided (privacyIDEA works well in our experience, but there are many others). If you are not able to use a smartphone, 
      > note that it is also possible to install a TOTP authenticator application on your laptop (e.g. KeePassXC). 
@@ -36,10 +36,10 @@ The collaborative organization manages your access to the AGH.
 - After joining the collaboration, you will get two emails with your temporary login information.
   ![Screen after one joins the SRAM collaboration successfully](images/sram_joind.png)
 
-  >[!WARNING]
+  > [!WARNING]
   > The link in the mail is **only valid for 12 hours**.
 
-  >[!IMPORTANT]
+  > [!IMPORTANT]
   > The system can take 20 minutes to sync. If you stil cannot login after 1 hour, please contact us.
 
 
@@ -49,7 +49,7 @@ The collaborative organization manages your access to the AGH.
 1. Once you have received the emails, you need to setup the AGHub user account. 
    - You will receive a mail with your username, and a separate mail with a link to set your password. 
      Use this link to set your account password. 
-     >[!WARNING]
+     > [!WARNING]
      > The link is a one-time link. Do not close your browser window before you have set a new password! Note that the password
      needs to be at least 12 characters, with at least one lowercase, uppercase, digit and special character.
    - After you have set a password, you need to login. During login, you will have to setup the 2FA for the AGHub. To do this, 
