@@ -13,21 +13,23 @@ The collaborative organization manages your access to the AGH.
 - To join, accept the invitation e-mail you received. By clicking the button, you get a welcome message. 
 - Next, click login. You will be redirected to a search page in which you can search for your institute.
   You have two options:
-  1. [PREFERRED] Login through your instutional account (associated with institute mail account on which you received your invitation). To search the correct link,
+  1. (PREFERRED) Login through your instutional account (associated with institute mail account on which you received your invitation). To search the correct link,
      enter the name of your institute in the text box. Many institutes have already been linked. If yours is not among them, 
      let us know!
      ![Screen showing the institute seach box](images/broad_select.png)
-     > [!NOTE]
-     > After logging in, it is possible that you receive a message that your institute has not activated access to 
-     > SURF Research Access Management (SRAM). In that case, you need to contact your ICT helpdesk. Store the information in the 
-     > error message in a screen shot, and mention that you want to request that the IdP service of your institute is 
-     > activated/linked to SRAM. You can also refer the helpdesk to this [link](https://dashboard.surfconext.nl/apps/8164/saml20_sp/about) for more information.
 
-     > [!NOTE]
-     > The SRAM account requires 2-factor authentication. If your institute has not activated this, it will use the SRAM fallback method. This method uses TOTP (time-based one-time password).
-     > For smartphones, some links to authenticator apps are provided (privacyIDEA works well in our experience, but there are many others). If you are not able to use a smartphone, 
-     > note that it is also possible to install a TOTP authenticator application on your laptop (e.g. KeePassXC). 
-  2. [FALLBACK] If institutional access is not an option, there is the option to use the [EduID service](https://eduid.nl/en/). This provides an identity service
+>[!NOTE]
+> After logging in, it is possible that you receive a message that your institute has not activated access to 
+> SURF Research Access Management (SRAM). In that case, you need to contact your ICT helpdesk. Store the information in the 
+> error message in a screen shot, and mention that you want to request that the IdP service of your institute is 
+> activated/linked to SRAM. You can also refer the helpdesk to this [link](https://dashboard.surfconext.nl/apps/8164/saml20_sp/about) for more information.
+
+>[!NOTE]
+> The SRAM account requires 2-factor authentication. If your institute has not activated this, it will use the SRAM fallback method. This method uses TOTP (time-based one-time password).
+> For smartphones, some links to authenticator apps are provided (privacyIDEA works well in our experience, but there are many others). If you are not able to use a smartphone, 
+> note that it is also possible to install a TOTP authenticator application on your laptop (e.g. KeePassXC). 
+  
+  2. (FALLBACK) If institutional access is not an option, there is the option to use the [EduID service](https://eduid.nl/en/). This provides an identity service
      for people who do not have an institutional account or when it is difficult to get institutional access activated. 
      - To find the EduID service,  enter 'EduID' in the text box that is also used to search for institutes. You will then see a list of EduID services. Select the one that is 
        appropriate for you, or otherwise 'EduID (NL)'. 
@@ -36,11 +38,11 @@ The collaborative organization manages your access to the AGH.
 - After joining the collaboration, you will get two emails with your temporary login information.
   ![Screen after one joins the SRAM collaboration successfully](images/sram_joind.png)
 
-  > [!WARNING]
-  > The link in the mail is **only valid for 12 hours**.
+>[!WARNING]
+> The link in the mail is **only valid for 12 hours**.
 
-  > [!IMPORTANT]
-  > The system can take 20 minutes to sync. If you stil cannot login after 1 hour, please contact us.
+>[!IMPORTANT]
+> The system can take 20 minutes to sync. If you stil cannot login after 1 hour, please contact us.
 
 
 ------------------------
@@ -49,9 +51,9 @@ The collaborative organization manages your access to the AGH.
 1. Once you have received the emails, you need to setup the AGHub user account. 
    - You will receive a mail with your username, and a separate mail with a link to set your password. 
      Use this link to set your account password. 
-     > [!WARNING]
-     > The link is a one-time link. Do not close your browser window before you have set a new password! Note that the password
-     needs to be at least 12 characters, with at least one lowercase, uppercase, digit and special character.
+>[!WARNING]
+> The link is a one-time link. Do not close your browser window before you have set a new password! Note that the password
+> needs to be at least 12 characters, with at least one lowercase, uppercase, digit and special character.
    - After you have set a password, you need to login. During login, you will have to setup the 2FA for the AGHub. To do this, 
      you will need to  scan a QR code with an app like privacyIDEA authenticator.  
    - The app will now generate a 6-digit code every 30 seconds. Next, you have to enter this 6-digit code to continue.
@@ -69,8 +71,8 @@ The collaborative organization manages your access to the AGH.
      - On Linux, the key-pair is stored in the .ssh folder in your home directory. The public key is the file with the extension .pub, e.g. `cat ~/.ssh/id_rsa.pub`.
      - On Windows, one can use the user interface to store the public key in a file, or one can directly copy the key to the clipboard from the GUI.
    - Then, go to the portal, and fill in the public key in the text box, and the *password of your portal account*.
-     >[!IMPORTANT]
-     > This is not the password which you might have associated with your private key, but the **portal password**. 
+>[!IMPORTANT]
+> This is not the password which you might have associated with your private key, but the **portal password**. 
    - Then, click on the button to upload the key.
 
 
