@@ -83,7 +83,7 @@ Now you are set to login to the AGHub system. Note that it might take a bit of t
 
 1. Log into the doornode with password set in the SURF portal:
    ```bash
-   ssh sram-aghub-[First initial][Last name]@doornode.surfsara.nl
+   ssh sram-aghub-[First initial][Last name]@doornode.hpcv.surf.nl
    ```
 
 2. After logging into the doornode, select aghub which should appear in a single select list.
