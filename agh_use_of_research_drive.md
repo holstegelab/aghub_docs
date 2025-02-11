@@ -37,14 +37,14 @@ This client is available for Windows, Mac and Linux. The following page describe
 * [PREFERRED] RClone. This is a command line tool that allows you to mount the Research Drive to a folder 
 on your local machine. When 'mounted', the research folder appears just like a normal folder on your machine. 
 This can be accomplished with the tool 'RClone'. Setting up RClone is described on the following page:
-[rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone). Note that the same
+[rClone access](https://servicedesk.surf.nl/wiki/display/WIKI/Access+Research+Drive+via+Rclone). Note that the same
 rclone config process also has to be performed on the AGH cluster (Step 3). 
 
 -------------------------------------------------
 ## Step 3. Accessing the Research Drive from the AGH cluster
 
 1. The research drive can be accessed from the cluster through the use of RClone. How to set this up is described on the
-   following page: [rClone access](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone).
+   following page: [rClone access](https://servicedesk.surf.nl/wiki/display/WIKI/Access+Research+Drive+via+Rclone).
 
 2. After finishing this, there should be a rclone config being available which the name
    that was chosen during configuration (e.g. 'RD').
