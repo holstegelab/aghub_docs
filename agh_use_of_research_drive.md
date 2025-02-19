@@ -32,7 +32,7 @@ The research drive can be accessed in multiple ways from your local machine:
 * A sync client on your local machine. This will automatically sync the contents of the
 Research Drive to a folder on your local machine. This way, you can easily transfer data to and from the cluster. 
 This client is available for Windows, Mac and Linux. The following page describes how to set up the client:
-[ownCloud client](https://wiki.surfnet.nl/display/RDRIVE/ownCloud+desktop+client).
+[ownCloud client](https://servicedesk.surf.nl/wiki/display/WIKI/ownCloud+desktop+client).
 
 * [PREFERRED] RClone. This is a command line tool that allows you to mount the Research Drive to a folder 
 on your local machine. When 'mounted', the research folder appears just like a normal folder on your machine. 
