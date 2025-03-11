@@ -15,8 +15,8 @@ experience (copy data into a folder on AGH, and receive it in a folder on your l
    * If your organization allows logging in through your institutional account, you are advised to use that option. You can then login with  your institutional account credentials.
    * Alternatively, you can select the option to set up a password directly. 
 
-     >[!IMPORTANT]
-     > Note that you will **not** be guided to a new page (**the button *appears* not to work**). However, instead you will directly receive a (temporary) password in the mail. 
+     > **Important:** Note that you will **not** be guided to a new page (**the button *appears* not to work**). 
+     > However, instead you will directly receive a (temporary) password in the mail. 
 
 2. After you have created an account, an AGHub Admin has to create and give you access to your own AGHub folder. This can take up to a day during working days. If you have not received permissions after a day (you will receive an email), please contact an AGH Admin.
    Up till then, you will have an empty home folder.
@@ -74,9 +74,9 @@ This can be done in two ways:
        mount_rd RD:your_folder_name
    ```
    
-   >[!NOTE]
-   > This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
-   > name of your configuration.
+>[!NOTE]
+> This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
+> name of your configuration. `your_folder_name` is the name of the folder you seen when executing `rclone ls RD:`.
 
 
    This script will excute a rclone mount command (see below), and run this in a so-called 'screen' session in the background.
@@ -92,15 +92,13 @@ This can be done in two ways:
       unmount_rd
    ```  
 
-   >[!NOTE]
-   > This assumes there is already a folder named `rd` in your home directory, note that this
-   > folder is automatically created by the init script (see [getting started](agh_getting_started.md)).
+>[!NOTE]
+> This assumes there is already a folder named `rd` in your home directory, note that this
+> folder is automatically created by the init script (see [getting started](agh_getting_started.md)).
+> The mounted folder will be empty if you have not copied any files to the research drive yet.
 
-   >[!NOTE]
-   > The mounted folder will be empty if you have not copied any files to the research drive yet.
-
-   >[!WARNING]
-   > The mounted folder will only be visible on the user interface machine, and not on the cluster worker nodes. If research drive access is necessary for a cluster job, use the direct `rclone copy` command. 
+>[!WARNING]
+> The mounted folder will only be visible on the user interface machine, and not on the cluster worker nodes. If research drive access is necessary for a cluster job, use the direct `rclone copy` command. 
 
 
 
