@@ -28,7 +28,7 @@ your local machine to the AGH. This is a convenient way to install software.
 Steps:
 
 1. Create a conda environment on your local machine. For example, you can create a conda environment
-   with the name 'myenv' by running the command `conda create -n myenv` 
+   with the name 'myenv' by running the command `conda create -n myenv`. Activate this environment with `conda activate myenv`.
    >[!NOTE]
    > This assumes you have installed conda already, if not, we recommend the [Miniforge](https://github.com/conda-forge/miniforge#mambaforge) installer.
    > If you are using 'Mamba' (faster alternative for Conda), you should replace `conda` with the `mamba` command in the following steps (except for `conda-pack`).
@@ -52,7 +52,7 @@ Steps:
 
 8. Activate the environment: `conda activate ~/envs/myenv`
 
-9. Run the command `conda-unpack` to finalize the installation.
+9. Run the command `conda-unpack` to finalize the installation. Now activate it using 'conda activate myenv'. 
 
 
 -----------------------------------------------
