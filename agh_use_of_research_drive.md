@@ -61,19 +61,18 @@ This can be done in two ways:
 
 1. A direct copy command: 
 
-```bash
-    rclone copy /path/to/local/file RD:your_folder_name/file
-    rclone ls RD:your_folder_name
-```
+   ```bash
+      rclone copy /path/to/local/file RD:your_folder_name/file
+	  rclone ls RD:your_folder_name
+   ```
 
-(`your_folder_name` is the name of the folder you see when executing `rclone ls RD:`)
+   (`your_folder_name` is the name of the folder you see when executing `rclone ls RD:`)
 
 
 2. [PREFERRED] By mounting the research drive to a folder on the cluster. This can be done by the following command:
    ```bash
        mount_rd RD:your_folder_name
    ```
-   Here, your_folder_name is the folder name you see by executing `rclone ls RD:`.
    
    >[!NOTE]
    > This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
