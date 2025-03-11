@@ -14,6 +14,7 @@ experience (copy data into a folder on AGH, and receive it in a folder on your l
    create an account. After following this link, there are two options: 
    * If your organization allows logging in through your institutional account, you are advised to use that option. You can then login with  your institutional account credentials.
    * Alternatively, you can select the option to set up a password directly. 
+
      >[!IMPORTANT]
      > Note that you will **not** be guided to a new page (**the button *appears* not to work**). However, instead you will directly receive a (temporary) password in the mail. 
 
@@ -70,13 +71,27 @@ This can be done in two ways:
 
 2. [PREFERRED] By mounting the research drive to a folder on the cluster. This can be done by the following command:
    ```bash
-       rclone mount RD:your_folder_name ~/rd
+       mount_rd RD:your_folder_name
    ```
+   Here, your_folder_name is the folder name you see by executing `rclone ls RD:`.
+   
+   >[!NOTE]
+   > This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
+   > name of your configuration.
+
+
+   This script will excute a rclone mount command (see below), and run this in a so-called 'screen' session in the background.
+
    Now, files in the folder 'rd' will mirror the files in the research drive. 
    Also, if you have set up a sync client or a similar rclone configuration on your local machine,
    **any files copied to the rd folder will immediately appear in the mounted folder on your local machine**. 
    Vice versa, any files copied in the mounted folder on your local machine will immediately appear in the 
    `rd` folder on the cluster.
+
+   To unmount the research drive, run the following command:
+   ```bash
+      unmount_rd
+   ```  
 
    >[!NOTE]
    > This assumes there is already a folder named `rd` in your home directory, note that this
@@ -84,43 +99,27 @@ This can be done in two ways:
 
    >[!NOTE]
    > The mounted folder will be empty if you have not copied any files to the research drive yet.
-   
-   - You can now move the rclone process to the background by pressing CTRL+Z and then typing 'bg'. But see below ('Recommended rclone mount options') for an easier method.
-   - To unmount the folder, you can move the rclone process to the foreground by typing 'fg' and then pressing CTRL+C.
-   - Alternatively, you can use the command 'fusermount -u rd' to unmount the folder.
 
    >[!WARNING]
    > The mounted folder will only be visible on the user interface machine, and not on the cluster worker nodes. If research drive access is necessary for a cluster job, use the direct `rclone copy` command. 
 
---------------------------------
-## Recommended rclone mount options
 
-For day to day use, we recommend a few options to make the connection more reliable:
 
-```bash
-    rclone mount --use-cookies --timeout 15m --cache-dir ~/.rd_cache --vfs-cache-mode full --no-modtime RD:your_folder_name  ~/rd
-```
+## Manually excuting rclone mount
+   If you prefer, you can also execute the rclone mount command manually.  We advise the following mount options:
 
-- The option '--use-cookies' will make sure that you get connected to the same backend to prevent file locking issues. 
-- The option '--timeout 15m' is needed for the transfer of large files (increase if needed). 
-- The option '--cache-dir .rd_cache --vcf-cache-mode full' will cache files locally to enable random access file access patterns. 
-- The option '--no-modtime' will not update the modification time of files on the research drive (can speed things up).
+   ```bash
+       rclone mount --use-cookies --timeout 15m --cache-dir ~/.rd_cache --vfs-cache-mode full --no-modtime RD:your_folder_name  ~/rd
+   ```
+   - The option '--use-cookies' will make sure that you get connected to the same backend to prevent file locking issues. 
+   - The option '--timeout 15m' is needed for the transfer of large files (increase if needed). 
+   - The option '--cache-dir .rd_cache --vcf-cache-mode full' will cache files locally to enable random access file access patterns. 
+   - The option '--no-modtime' will not update the modification time of files on the research drive (can speed things up).
 
-Also, you can run the `rclone mount` command in a screen session to prevent the connection from being terminated when you
-log out of the cluster. To facilitate this, we have created a script that automatically sets up the screen session and executes the 
-rclone mount command. 
+   You can now move the rclone process to the background by pressing CTRL+Z and then typing 'bg'.
+   To unmount the folder, you can move the rclone process to the foreground by typing 'fg' and then pressing CTRL+C.
+   Alternatively, you can use the command 'fusermount -u rd' to unmount the folder.
 
-To use this script, run the following command:
-```bash
-    mount_rd RD:your_folder_name
-```
-Here, your_folder_name is the folder name you see by executing `rclone ls RD:`.
 
->[!NOTE]
-> This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
-> name of your configuration.
 
-To unmount the research drive, run the following command:
-```bash
-    fusermount -u ~/rd
-```
+
