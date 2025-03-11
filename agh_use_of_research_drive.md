@@ -73,6 +73,9 @@ This can be done in two ways:
    ```bash
        mount_rd RD:your_folder_name
    ```
+   Now the `rd` folder in your home folder will contain the data that is on the research drive. Any files you copy in the 
+   `rd` folder will appear also automatically on the research drive. And if you have set up the sync client or rclone on your
+   own pc, it will also appear automatically on your own pc in the folder that you have set up fo rthis. 
    
 >[!NOTE]
 > This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
