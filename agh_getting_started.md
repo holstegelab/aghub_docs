@@ -6,6 +6,17 @@
 
 The Alzheimer Genetics Hub (AGH) is a secure compute environment based largely from a clone of the Spider cluster at SURF.
 
+Initial setup of the account requires the following:
+- a link to your instutional account or an EduID account (to confirm your identity)
+- a password for the AGH account + 2-factor authentication setup (using an app like privacyIDEA)
+- a public SSH key uploaded to the SURF portal
+
+Then, you can login to the AGH system, and initialize your account. 
+Next, to facilitate data transfer, you will need to setup your research drive mount.
+
+Together, this might take a bit of time, but once you are set up, usage of the system is straightforward.
+
+
 ------------------------
 ## Step 1. Join the Collaborative Organization
 
