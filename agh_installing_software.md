@@ -6,12 +6,10 @@ To install software, one can upload a package to the AGH through the
 [research drive](agh_use_of_research_drive.md), and then install it using standard 
 approaches. 
 
-However, some software packages require large number of dependencies, which can be 
+However, some software packages require a large number of dependencies, which can be 
 a hassle to install. Conda is a recommended method for installing such software
 and its dependencies. However, this normally requires an active internet connection.
 
->[!IMPORTANT]
-> Note that many (bioinformatics) software packages are already available through the default Conda environment.
 
 -----------------------------------------------
 ## Install custom conda environments on the AGH
@@ -29,6 +27,7 @@ Steps:
 
 1. Create a conda environment on your local machine. For example, you can create a conda environment
    with the name 'myenv' by running the command `conda create -n myenv`. Activate this environment with `conda activate myenv`.
+
 >[!NOTE]
 > This assumes you have installed conda already, if not, we recommend the [Miniforge](https://github.com/conda-forge/miniforge#mambaforge) installer.
 > If you are using 'Mamba' (faster alternative for Conda), you should replace `conda` with the `mamba` command in the following steps (except for `conda-pack`).
