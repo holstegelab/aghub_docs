@@ -73,22 +73,16 @@ This can be done in two ways:
    ```bash
        mount_rd RD:your_folder_name
    ```
+   This script is provided on AGHub and will excute a rclone mount command (see below), and run this in a so-called 'screen' session in the background.
+
    Now the `rd` folder in your home folder will contain the data that is on the research drive. Any files you copy in the 
    `rd` folder will appear also automatically on the research drive. And if you have set up the sync client or rclone on your
    own pc, it will also appear automatically on your own pc in the folder that you have set up fo rthis. 
    
 >[!NOTE]
 > This assumes that you have named your configuration 'RD'. If you have chosen a different name, replace 'RD' with the
-> name of your configuration. `your_folder_name` is the name of the folder you seen when executing `rclone ls RD:`.
+> name of your configuration. `your_folder_name` is the name of the folder you see when executing `rclone ls RD:`.
 
-
-   This script will excute a rclone mount command (see below), and run this in a so-called 'screen' session in the background.
-
-   Now, files in the folder 'rd' will mirror the files in the research drive. 
-   Also, if you have set up a sync client or a similar rclone configuration on your local machine,
-   **any files copied to the rd folder will immediately appear in the mounted folder on your local machine**. 
-   Vice versa, any files copied in the mounted folder on your local machine will immediately appear in the 
-   `rd` folder on the cluster.
 
    To unmount the research drive, run the following command:
    ```bash
@@ -98,6 +92,7 @@ This can be done in two ways:
 >[!NOTE]
 > This assumes there is already a folder named `rd` in your home directory, note that this
 > folder is automatically created by the init script (see [getting started](agh_getting_started.md)).
+> This script will also install the `mount_rd` command. 
 > The mounted folder will be empty if you have not copied any files to the research drive yet.
 
 >[!WARNING]
@@ -120,6 +115,11 @@ This can be done in two ways:
    To unmount the folder, you can move the rclone process to the foreground by typing 'fg' and then pressing CTRL+C.
    Alternatively, you can use the command 'fusermount -u rd' to unmount the folder.
 
+
+----------------------
+## Continue to software installation
+
+Now you are ready for [installation of new software](agh_installing_software.md).
 
 
 

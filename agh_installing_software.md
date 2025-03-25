@@ -86,5 +86,10 @@ For more information on how to use Singularity, please refer to the [Singularity
 
 
 
+----------------------
+## Get started with SLURM
+
+After installing  your software, please refer to our Spider documentation for submitting your first jobs:
+[Spider Documentation](https://spiderdocs.readthedocs.io/en/latest/Pages/getting_started.html). 
 
 
