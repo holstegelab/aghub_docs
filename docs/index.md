@@ -1,5 +1,6 @@
 # AGHub Documentation
 
+
 New to AGHub? Follow these pages in order:
 
 1. [Getting Started](getting-started.md): account setup, first login, and cluster initialization.
