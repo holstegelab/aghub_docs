@@ -118,14 +118,6 @@ key; the matching *public* key is uploaded once to SURFcua.
 1. Open the [SURFcua portal](https://portal.cua.surf.nl/) and log in with your username, portal password, and 2FA code.
 2. Go to **SSH Keys**.
 3. Paste the full public key line into the SSH key field.
-4. Enter your AGHub/SURFcua portal password when the portal asks for confirmation.
-5. Click the button to add or upload the key.
-
-!!! warning "Which password to enter"
-
-    The password requested when adding an SSH key is your AGHub/SURFcua
-    portal password. It is *not* the optional passphrase that may protect
-    your private SSH key on your own computer.
 
 ??? info "How to create or find your SSH public key"
 
@@ -143,6 +135,16 @@ key; the matching *public* key is uploaded once to SURFcua.
 
     The public key is a single long line that starts with a key type such as
     `ssh-ed25519` or `ssh-rsa`. Copy the whole line.
+
+4. Enter your AGHub/SURFcua portal password when the portal asks for confirmation.
+
+!!! warning "Which password to enter"
+
+    The password requested when adding an SSH key is your AGHub/SURFcua
+    portal password. It is *not* the optional passphrase that may protect
+    your private SSH key on your own computer.
+
+5. Click the button to add or upload the key.
 
 ??? info "Supported SSH key types and key removal"
 
