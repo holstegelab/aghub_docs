@@ -119,30 +119,30 @@ key; the matching *public* key is uploaded once to SURFcua.
 2. Go to **SSH Keys**.
 3. Paste the full public key line into the SSH key field.
 
-??? info "How to create or find your SSH public key"
+    ??? info "How to create or find your SSH public key"
 
-    If you do not have an SSH key pair yet:
+        If you do not have an SSH key pair yet:
 
-    - **Linux/macOS:** follow the [Spider SSH key guide](https://spiderdocs.readthedocs.io/en/latest/Pages/ssh_keys.html). The SSH agent step is optional for AGHub.
-    - **Windows:** generate a key with [PuTTYgen](https://www.ssh.com/academy/ssh/putty/windows/puttygen), or use the OpenSSH tools included with recent Windows versions.
+        - **Linux/macOS:** follow the [Spider SSH key guide](https://spiderdocs.readthedocs.io/en/latest/Pages/ssh_keys.html). The SSH agent step is optional for AGHub.
+        - **Windows:** generate a key with [PuTTYgen](https://www.ssh.com/academy/ssh/putty/windows/puttygen), or use the OpenSSH tools included with recent Windows versions.
 
-    On Linux or macOS, public keys are usually in `~/.ssh/` and end in `.pub`,
-    for example `id_ed25519.pub` or `id_rsa.pub`. Show one with:
+        On Linux or macOS, public keys are usually in `~/.ssh/` and end in `.pub`,
+        for example `id_ed25519.pub` or `id_rsa.pub`. Show one with:
 
-    ```bash
-    cat ~/.ssh/id_ed25519.pub   # or id_rsa.pub
-    ```
+        ```bash
+        cat ~/.ssh/id_ed25519.pub   # or id_rsa.pub
+        ```
 
-    The public key is a single long line that starts with a key type such as
-    `ssh-ed25519` or `ssh-rsa`. Copy the whole line.
+        The public key is a single long line that starts with a key type such as
+        `ssh-ed25519` or `ssh-rsa`. Copy the whole line.
 
 4. Enter your AGHub/SURFcua portal password when the portal asks for confirmation.
 
-!!! warning "Which password to enter"
+    !!! warning "Which password to enter"
 
-    The password requested when adding an SSH key is your AGHub/SURFcua
-    portal password. It is *not* the optional passphrase that may protect
-    your private SSH key on your own computer.
+        The password requested when adding an SSH key is your AGHub/SURFcua
+        portal password. It is *not* the optional passphrase that may protect
+        your private SSH key on your own computer.
 
 5. Click the button to add or upload the key.
 
